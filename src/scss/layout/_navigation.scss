@@ -1,0 +1,15 @@
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9rem;
+
+  .nav-box {
+    display: flex;
+
+    &__nav-item--link {
+      display: inline-block;
+      padding: 2rem 1.5rem;
+    }
+  }
+}
