@@ -15,11 +15,13 @@ body {
 .heading-secondary {
   text-align: center;
   text-transform: uppercase;
-  font-size: 4rem; }
+  font-size: 4rem;
+  margin-bottom: 2rem; }
 
 .heading-tertiary {
   text-align: center;
-  font-size: 2.4rem; }
+  font-size: 2.4rem;
+  margin-bottom: 1rem; }
 
 .subheading {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -63,6 +65,45 @@ body {
   color: #fff; }
   .btn-yellow:hover {
     background: #e5b101; }
+
+.project-box {
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 3rem;
+  height: 38rem; }
+  .project-box__picture-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem; }
+    .project-box__picture-box:hover {
+      cursor: pointer; }
+    .project-box__picture-box:hover:after {
+      opacity: 1; }
+    .project-box__picture-box:hover .project-box__icon {
+      opacity: 1;
+      z-index: 3; }
+  .project-box__picture-box:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(254, 208, 53, 0.9);
+    opacity: 0;
+    transition: all .4s; }
+  .project-box__image {
+    width: 100%;
+    vertical-align: middle; }
+  .project-box__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6.5rem;
+    color: #fff;
+    opacity: 0;
+    transition: all .5s; }
 
 .service-box {
   width: 33%;
@@ -108,40 +149,40 @@ body {
     font-size: 7.5rem;
     text-transform: uppercase; }
 
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
-.navbar__logo {
-  font-size: 2.8rem;
-  font-family: "Kaushan Script", cursive;
-  color: #fed035;
-  padding: 1rem 2rem;
-  margin-top: 1.6rem; }
-  .navbar__logo--link {
-    text-decoration: none; }
-    .navbar__logo--link:hover {
-      color: #e5b101; }
-
-.navbar__navigation {
-  display: flex;
-  font-size: 1.5rem;
-  font-family: "Montserrat", sans-serif;
-  color: #fff;
-  list-style: none;
-  margin-top: 1.6rem; }
-
-.navbar__item {
-  text-transform: uppercase; }
-
-.navbar__link {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  padding: 1rem 2rem; }
-  .navbar__link:hover {
-    color: #fed035; }
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding-top: 1.6rem;
+  transition: all .2s; }
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .navbar__logo {
+    font-size: 2.8rem;
+    font-family: "Kaushan Script", cursive;
+    color: #fed035;
+    padding: 1rem 2rem; }
+    .navbar__logo--link {
+      text-decoration: none; }
+      .navbar__logo--link:hover {
+        color: #e5b101; }
+  .navbar__navigation {
+    display: flex;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    list-style: none; }
+  .navbar__item {
+    text-transform: uppercase; }
+  .navbar__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem 2rem; }
+    .navbar__link:hover {
+      color: #fed035; }
 
 .services-section {
   padding: 15rem 0; }
@@ -149,3 +190,12 @@ body {
 .services {
   display: flex;
   justify-content: center; }
+
+.portfolio-section {
+  padding: 15rem 0;
+  background-color: #f8f9fa; }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2.5rem; }

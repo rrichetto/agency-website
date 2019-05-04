@@ -1,4 +1,9 @@
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding-top: 1.6rem;
+  transition: all .2s;
 
   .container {
     display: flex;
@@ -11,11 +16,10 @@
     font-family: $secondary-font;
     color: $main-color;
     padding: 1rem 2rem;
-    margin-top: 1.6rem;
 
     &--link {
       text-decoration: none;
-      
+
       &:hover {
         color: darken($main-color, 15%);
       }
@@ -28,7 +32,6 @@
     font-family: $main-font;
     color: $white-color;
     list-style: none;
-    margin-top: 1.6rem;
   }
 
   &__item {
