@@ -1,5 +1,12 @@
 .container {
-  max-width: 114rem; // 1140px
+  width: 114rem;
   margin: 0 auto;
-  padding: 0 2rem;
 }
+
+.margin-top-sm { margin-top: 2rem }
+.margin-top-md { margin-top: 4rem }
+.margin-top-lg { margin-top: 6rem }
+
+.margin-bottom-sm { margin-bottom: 2rem }
+.margin-bottom-md { margin-bottom: 4rem }
+.margin-bottom-lg { margin-bottom: 6rem }

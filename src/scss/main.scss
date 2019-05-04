@@ -1,6 +1,13 @@
 @import 'abstracts/variables';
 
 @import 'base/base';
+@import 'base/typography';
 @import 'base/utilities';
 
+@import 'components/buttons';
+@import 'components/service-box';
+
 @import 'layout/header';
+@import 'layout/navbar';
+
+@import 'pages/home';

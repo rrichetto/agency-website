@@ -1,0 +1,20 @@
+.service-box {
+  width: 33%;
+  padding: 1rem 2rem;
+  text-align: center;
+
+  &__icon-background {
+    color: $main-color;
+  }
+
+  &__icon {
+    color: $white-color;
+  }
+
+  &__text {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.7rem;
+    color: $grey-color;
+    line-height: 1.6;
+  }
+}

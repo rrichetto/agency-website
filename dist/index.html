@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300,400,700|Roboto+Slab:400,700" rel="stylesheet">
 
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -18,28 +19,64 @@
   <title>Agency (Clone) - Start Bootstrap</title>
 </head>
 <body>
-  <header class="header">
-    <div class="header__navbar">
-        <div class="container">
-          <h1 class="header__logo">Start Bootstrap</h1>
-          <ul class="header__navigation">
-            <li class="header__nav-item"><a class="header__nav-link" href="#">Services</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="#">Portfolio</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="#">About</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="#">Team</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="#">Contact</a></li>
-          </ul>
-        </div>
-    </div>
+  <!-- Header -->
+  <section class="header">
+    <nav class="navbar">
+      <div class="container">
+        <p class="navbar__logo"><a class="navbar__logo navbar__logo--link" href="#">Start Bootstrap</a></p>
+        <ul class="navbar__navigation">
+          <li class="navbar__item"><a href="#" class="navbar__link">Services</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">Portfolio</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">About</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">Team</a></li>
+          <li class="navbar__item"><a href="#" class="navbar__link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    <div class="header__content">
+    <div class="header-content">
       <h1 class="heading-primary">
         <span class="heading-primary--main">Welcome To Our Studio!</span>
         <span class="heading-primary--sub">It's Nice To Meet You</span>
       </h1>
-      <a class="btn btn-yellow" href="#"></a>
+      <a href="#" class="btn btn-yellow">Tell Me More</a>
     </div>
-  </header>
+  </section>
+
+  <!-- Services -->
+  <section class="services-section">
+    <div class="container">
+      <h2 class="heading-secondary margin-bottom-sm">Services</h2>
+      <p class="subheading">Lorem ipsum dolor sit amet consectuter.</p>
+      <div class="services margin-top-md">
+        <div class="service-box">
+            <span class="fa-stack fa-6x margin-bottom-sm">
+              <i class="service-box__icon-background fa fa-circle fa-stack-2x"></i>
+              <i class="service-box__icon fas fa-shopping-cart fa-stack-1x"></i>
+            </span>
+            <h3 class="heading-tertiary margin-bottom-sm">E-Commerce</h3>
+            <p class="service-box__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eligendi ducimus voluptate dolor. Unde sed nesciunt.</p>
+        </div>
+        <div class="service-box">
+            <span class="fa-stack fa-6x margin-bottom-sm">
+              <i class="service-box__icon-background fa fa-circle fa-stack-2x"></i>
+              <i class="service-box__icon fas fa-laptop fa-stack-1x"></i>
+            </span>
+            <h3 class="heading-tertiary margin-bottom-sm">Responsive Design</h3>
+            <p class="service-box__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem minus doloribus tenetur? Fugit eligendi neque quae!</p>
+        </div>
+        <div class="service-box">
+            <span class="fa-stack fa-6x margin-bottom-sm">
+              <i class="service-box__icon-background fa fa-circle fa-stack-2x"></i>
+              <i class="service-box__icon fas fa-lock fa-stack-1x"></i>
+            </span>
+            <h3 class="heading-tertiary margin-bottom-sm">Web Security</h3>
+            <p class="service-box__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam aspernatur earum quasi aliquam magnam, explicabo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <script src="main.js"></script>
 </body>

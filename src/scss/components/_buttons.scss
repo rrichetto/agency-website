@@ -1,0 +1,17 @@
+.btn {
+  padding: 2rem 4rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: .5rem;
+}
+
+.btn-yellow {
+  background: $main-color;
+  color: $white-color;
+
+  &:hover {
+    background: darken($main-color, 15%);
+  }
+}
